@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    background-color: lightyellow;
+  }
+  
+  #time {
+    font-size: 8rem;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+  }
+
+  .text-win{
+    color: green;
+  }
+
+  .text-lose{
+    color: red;
+  }
+  
+  @media (max-width: 700px) {
+    #time {
+      font-size: 6rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #time {
+      font-size: 4rem;
+    }
+  }
+
+  /* hover rock, paper, crissors */
+  #rock, #paper, #scissors{
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+  /* hover effect */
+  #rock:hover, #paper:hover, #scissors:hover{
+    transform: scale(1.1);
+    color: orange;
+  }
+
+  .restart-btn{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: orange;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .restart-btn:hover{
+    background-color: #ff8c00;
+  }
+
+  #score p{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: orange;
+  }
